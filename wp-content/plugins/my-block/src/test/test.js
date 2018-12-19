@@ -11,9 +11,7 @@ import './editor.css';
 
 const { __ } = wp.i18n; // Import __() from wp.i18n
 const { registerBlockType } = wp.blocks; // Import registerBlockType() from wp.blocks
-const classes = {
-	headline: "test-block__headline"
-}
+
 /**
  * Register: aa Gutenberg Block.
  *
@@ -50,7 +48,7 @@ registerBlockType( 'cgb/block-test-block', {
 		// Creates a <p class='wp-block-cgb-block-my-block'></p>.
 		return (
 			<div className={ props.className }>
-				<h1 class="testing-this-class">My first testing block!!!</h1>
+				<h1 class="testing-this-class" id="hey-whatsup">My first testing block!!!</h1>
 			</div>
 		);
 	},
@@ -66,7 +64,7 @@ registerBlockType( 'cgb/block-test-block', {
 	save: function( props ) {
 		return (
 			<div>
-				<h1 class="testing-this-class">My first testing block!!!</h1>
+				<h1 class="testing-this-class" id="hey-whatsup">My first testing block!!!</h1>
 			</div>
 		);
 	},
