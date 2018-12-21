@@ -277,6 +277,10 @@ function twentynineteen_colors_css_wrap() {
 }
 add_action( 'wp_head', 'twentynineteen_colors_css_wrap' );
 
+
+
+
+
 /**
  * SVG Icons class.
  */
